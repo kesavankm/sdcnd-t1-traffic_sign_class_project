@@ -26,6 +26,11 @@ The goals / steps of this project are the following:
 [image6]: ./predict_samples/constrction_1.jpg "Traffic Sign 3"
 [image7]: ./predict_samples/give_way_1.jpg "Traffic Sign 4"
 [image8]: ./predict_samples/stop_1.jpg "Traffic Sign 5"
+[img_train_hist]: ./train_hist.jpg "Training data histogram"
+[img_sample_original]: ./sample_original.jpg "Original image"
+[img_sample_gray]: ./sample_gray.jpg "Post grayscale"
+[img_sample_normalized]: ./sample_normalized.jpg "Normalized image"
+
 
 ## Rubric Points
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -55,7 +60,7 @@ signs data set:
 
 Here is an exploratory visualization of the data set. It is a bar chart showing how the data ...
 
-![Histogram on the training set][train_hist.jpg]
+![Histogram on the training set][img_train_hist]
 
 ###Design and Test a Model Architecture
 
@@ -66,11 +71,11 @@ a) If we had RGB (three color channels) in the input image, we would need to per
 
 Here is an example of a traffic sign image before and after grayscaling.
 
-![Sample original image][sample_original.jpg]
-![Sample gray image][sample_gray.jpg]
+![Sample original image][img_sample_original]
+![Sample gray image][img_sample_gray]
 
 As a last step, I normalized the image data because, Normalize the data dimensions so that they are of the same scale. This process causes each feature to have a similar range so that our gradients don't go out of control (and that we only need one global learning rate multiplier).
-![Sample normalized image][sample_normalized.jpg]
+![Sample normalized image][img_sample_normalized]
 
 
 
