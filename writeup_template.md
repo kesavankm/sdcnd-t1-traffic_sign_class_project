@@ -72,9 +72,11 @@ a) If we had RGB (three color channels) in the input image, we would need to per
 Here is an example of a traffic sign image before and after grayscaling.
 
 ![Sample original image][img_sample_original]
+
 ![Sample gray image][img_sample_gray]
 
 As a last step, I normalized the image data because, Normalize the data dimensions so that they are of the same scale. This process causes each feature to have a similar range so that our gradients don't go out of control (and that we only need one global learning rate multiplier).
+
 ![Sample normalized image][img_sample_normalized]
 
 
