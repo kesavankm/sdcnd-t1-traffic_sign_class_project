@@ -21,11 +21,11 @@ The goals / steps of this project are the following:
 [image1]: ./examples/visualization.jpg "Visualization"
 [image2]: ./examples/grayscale.jpg "Grayscaling"
 [image3]: ./examples/random_noise.jpg "Random Noise"
-[img_german_sign1]: ./predict_samples/bump_rd_1.jpg "Traffic Sign 1"
-[img_german_sign2]: ./predict_samples/chld_cros_1.jpg "Traffic Sign 2"
-[img_german_sign3]: ./predict_samples/constrction_1.jpg "Traffic Sign 3"
-[img_german_sign4]: ./predict_samples/give_way_1.jpg "Traffic Sign 4"
-[img_german_sign5]: ./predict_samples/stop_1.jpg "Traffic Sign 5"
+[img_german_sign1]: ./predict_samples/stop_1.jpg "Stop sign"
+[img_german_sign2]: ./predict_samples/chld_cros_1.jpg "Children crossing"
+[img_german_sign3]: ./predict_samples/bump_rd_1.jpg "Bumpy road"
+[img_german_sign4]: ./predict_samples/give_way_1.jpg "Yield"
+[img_german_sign5]: ./predict_samples/constrction_1.jpg "Road work"
 [img_train_hist]: ./train_hist.jpg "Training data histogram"
 [img_sample_original]: ./sample_original.jpg "Original image"
 [img_sample_gray]: ./sample_gray.jpg "Post grayscale"
@@ -72,7 +72,6 @@ a) If we had RGB (three color channels) in the input image, we would need to per
 Here is an example of a traffic sign image before and after grayscaling.
 
 ![Sample original image][img_sample_original]
-
 ![Sample gray image][img_sample_gray]
 
 As a last step, I normalized the image data because, Normalize the data dimensions so that they are of the same scale. This process causes each feature to have a similar range so that our gradients don't go out of control (and that we only need one global learning rate multiplier).
@@ -142,13 +141,13 @@ The first image might be difficult to classify because ...
 
 Here are the results of the prediction:
 
-| Image			        |     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| Stop Sign      		| Stop sign   									| 
-| U-turn     			| U-turn 										|
-| Yield					| Yield											|
-| 100 km/h	      		| Bumpy Road					 				|
-| Slippery Road			| Slippery Road      							|
+| Image |     Prediction | 
+|:-----:|:--------------:| 
+| Stop sign | Stop sign | 
+| Children crossing | Children crossing |
+| Bumpy road	| Bumpy road |
+| Yield | No passing for vehicles over 3.5 metri tonnes |
+| Road work	| Road work |
 
 
 The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
@@ -157,18 +156,17 @@ The model was able to correctly guess 4 of the 5 traffic signs, which gives an a
 
 The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
 
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
+For the first image (Stop sign), the model is relatively sure that this is a stop sign (probability of 0.999), and the image does contain a stop sign. The top five soft max probabilities were
 
-| Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
+| Probability         	|     Prediction	  					| 
+|:---------------------:|----------------------:| 
+| .9999       			| Stop sign | 
+| .00003     				| Turn left ahead 										|
+| .00004					| Keep right											|
+| .000001	      			| Yield				 				|
+| .0000009				    | Speed limit (60kmp/h) |
 
 
-For the second image ... 
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 ####1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
