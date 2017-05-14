@@ -21,11 +21,11 @@ The goals / steps of this project are the following:
 [image1]: ./examples/visualization.jpg "Visualization"
 [image2]: ./examples/grayscale.jpg "Grayscaling"
 [image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./predict_samples/bump_rd_1.jpg "Traffic Sign 1"
-[image5]: ./predict_samples/chld_cros_1.jpg "Traffic Sign 2"
-[image6]: ./predict_samples/constrction_1.jpg "Traffic Sign 3"
-[image7]: ./predict_samples/give_way_1.jpg "Traffic Sign 4"
-[image8]: ./predict_samples/stop_1.jpg "Traffic Sign 5"
+[img_german_sign1]: ./predict_samples/bump_rd_1.jpg "Traffic Sign 1"
+[img_german_sign2]: ./predict_samples/chld_cros_1.jpg "Traffic Sign 2"
+[img_german_sign3]: ./predict_samples/constrction_1.jpg "Traffic Sign 3"
+[img_german_sign4]: ./predict_samples/give_way_1.jpg "Traffic Sign 4"
+[img_german_sign5]: ./predict_samples/stop_1.jpg "Traffic Sign 5"
 [img_train_hist]: ./train_hist.jpg "Training data histogram"
 [img_sample_original]: ./sample_original.jpg "Original image"
 [img_sample_gray]: ./sample_gray.jpg "Post grayscale"
@@ -40,7 +40,7 @@ The goals / steps of this project are the following:
 
 ####1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. You can submit your writeup as markdown or pdf. You can use this template as a guide for writing the report. The submission includes the project code.
 
-You're reading it! and here is a link to my [project code](https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb)
+You're reading it! and here is a link to my [project code](https://github.com/kesavankm/sdcnd-t1-traffic_sign_class_project/blob/master/Traffic_Sign_Classifier.ipynb)
 
 ###Data Set Summary & Exploration
 
@@ -131,8 +131,8 @@ If a well known architecture was chosen:
 
 Here are five German traffic signs that I found on the web:
 
-![alt text][image4] ![alt text][image5] ![alt text][image6] 
-![alt text][image7] ![alt text][image8]
+![Traffic sign 1][img_german_sign1] ![Traffic sign 2][img_german_sign2] ![Traffic sign 3][img_german_sign3] 
+![Traffic sign 4][img_german_sign4] ![Traffic sign 5][img_german_sign5]
 
 The first image might be difficult to classify because ...
 
